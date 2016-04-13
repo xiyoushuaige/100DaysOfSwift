@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xvy-gI-3VT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Counter-->
+        <scene sceneID="ATn-oz-rsb">
+            <objects>
+                <viewController id="hEz-ae-MbC" customClass="ViewController" customModule="Project1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yWq-mq-1aj"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Kc-G3-mP2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eli-eO-4AR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zg-1I-feb">
+                                <rect key="frame" x="276" y="398" width="48" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Tap"/>
+                                <connections>
+                                    <action selector="tapButtonPressed:" destination="hEz-ae-MbC" eventType="touchUpInside" id="viC-bc-gg5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiR-Yb-END">
+                                <rect key="frame" x="257" y="210" width="87" height="180"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="150"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9zg-1I-feb" firstAttribute="top" secondItem="hiR-Yb-END" secondAttribute="bottom" constant="8" symbolic="YES" id="E7m-fr-0a0"/>
+                            <constraint firstItem="hiR-Yb-END" firstAttribute="centerY" secondItem="Eli-eO-4AR" secondAttribute="centerY" id="M57-Oy-MPI"/>
+                            <constraint firstItem="hiR-Yb-END" firstAttribute="centerX" secondItem="Eli-eO-4AR" secondAttribute="centerX" id="PT0-Qx-4JK"/>
+                            <constraint firstItem="9zg-1I-feb" firstAttribute="centerX" secondItem="hiR-Yb-END" secondAttribute="centerX" id="ucu-Kh-kTr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Counter" id="4Ul-hY-U3K">
+                        <barButtonItem key="leftBarButtonItem" title="Reset" id="ayY-Cg-v7c">
+                            <connections>
+                                <action selector="resetButtonPressed:" destination="hEz-ae-MbC" id="4mf-Ja-S6E"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="numberDisplayLabel" destination="hiR-Yb-END" id="d9m-IC-RKU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9aR-Mf-dW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1553" y="-22"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oq6-Ya-pHY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xvy-gI-3VT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hp9-Wo-0Oh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hEz-ae-MbC" kind="relationship" relationship="rootViewController" id="jgs-Fa-BKy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VdR-Ly-Keb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741" y="-22"/>
+        </scene>
+    </scenes>
+</document>
