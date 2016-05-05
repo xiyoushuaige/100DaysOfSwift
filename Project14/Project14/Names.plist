@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+		<key>A</key>
+		<array>
+			<string>Amy</string>
+			<string>Angela</string>
+			<string>Alice</string>
+			<string>Alex</string>
+			<string>Anne</string>
+		</array>
+		<key>B</key>
+		<array>
+			<string>Betty</string>
+			<string>Brian</string>
+			<string>Barbara</string>
+			<string>Bonnie</string>
+			<string>Bob</string>
+		</array>
+		<key>C</key>
+		<array>
+			<string>Crystal</string>
+			<string>Charles</string>
+			<string>Candy</string>
+			<string>Chris</string>
+			<string>Cindy</string>
+		</array>
+		<key>D</key>
+		<array>
+			<string>David</string>
+			<string>Daniel</string>
+			<string>Diego</string>
+			<string>Danny</string>
+			<string>Diana</string>
+		</array>
+		<key>E</key>
+		<array>
+			<string>Elizabeth</string>
+			<string>Emily</string>
+			<string>Eva</string>
+			<string>Eric</string>
+			<string>Edward</string>
+		</array>
+		<key>F</key>
+		<array>
+			<string>Frank</string>
+			<string>Fiona</string>
+			<string>Fernando</string>
+			<string>Francis</string>
+			<string>Francisco</string>
+		</array>
+		<key>G</key>
+		<array>
+			<string>George</string>
+			<string>Grace</string>
+			<string>Gary</string>
+			<string>Gina</string>
+			<string>Gloria</string>
+		</array>
+	
+</dict>
+</plist>
