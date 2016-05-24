@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Apple View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AppleViewController" customModule="Project33" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple" translatesAutoresizingMaskIntoConstraints="NO" id="zPZ-W3-qN5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="72Q-Pi-7rQ" appends="YES" id="l1g-uW-S4I"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zPZ-W3-qN5" secondAttribute="trailing" id="7dS-3O-h2w"/>
+                            <constraint firstItem="zPZ-W3-qN5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RbF-F8-sGQ"/>
+                            <constraint firstItem="zPZ-W3-qN5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="k9I-fd-gas"/>
+                            <constraint firstItem="zPZ-W3-qN5" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="uCq-p8-cL8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="enh-Rr-yLa" kind="presentation" identifier="AT" id="Jnb-hO-Rrt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="72Q-Pi-7rQ">
+                    <connections>
+                        <action selector="upSwipe:" destination="BYZ-38-t0r" id="5rV-2U-RIC"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="325" y="359"/>
+        </scene>
+        <!--Tesla View Controller-->
+        <scene sceneID="X6f-bK-1Wf">
+            <objects>
+                <viewController id="enh-Rr-yLa" customClass="TeslaViewController" customModule="Project33" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DJI-yB-DQx"/>
+                        <viewControllerLayoutGuide type="bottom" id="cKo-7J-dDO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BPw-3K-ik7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tesla" translatesAutoresizingMaskIntoConstraints="NO" id="3if-Z9-gM7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1ur-Fu-k4A" appends="YES" id="a1M-gW-4UR"/>
+                                    <outletCollection property="gestureRecognizers" destination="aEB-Oo-gCg" appends="YES" id="NDe-Jf-idz"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3if-Z9-gM7" firstAttribute="bottom" secondItem="cKo-7J-dDO" secondAttribute="top" id="ewb-C7-GEP"/>
+                            <constraint firstItem="3if-Z9-gM7" firstAttribute="leading" secondItem="BPw-3K-ik7" secondAttribute="leading" id="gGz-fW-rXc"/>
+                            <constraint firstAttribute="trailing" secondItem="3if-Z9-gM7" secondAttribute="trailing" id="oJJ-jw-EFU"/>
+                            <constraint firstItem="3if-Z9-gM7" firstAttribute="top" secondItem="BPw-3K-ik7" secondAttribute="top" id="rS6-CF-F16"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="XgU-7t-v4y" kind="presentation" identifier="TS" id="y9y-d7-MtM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZk-0W-EWw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="1ur-Fu-k4A">
+                    <connections>
+                        <action selector="upSwipe:" destination="enh-Rr-yLa" id="286-Pk-okS"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="aEB-Oo-gCg">
+                    <connections>
+                        <action selector="downSwipe:" destination="enh-Rr-yLa" id="8DQ-gd-VBe"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1055" y="359"/>
+        </scene>
+        <!--SpaceX View Controller-->
+        <scene sceneID="UkF-X5-Ue9">
+            <objects>
+                <viewController id="XgU-7t-v4y" customClass="SpaceXViewController" customModule="Project33" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GdX-CG-OIV"/>
+                        <viewControllerLayoutGuide type="bottom" id="4OQ-XK-kgx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ROv-md-d9A">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaceX" translatesAutoresizingMaskIntoConstraints="NO" id="a1q-Z0-lgr">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="MPB-iv-a3o" appends="YES" id="iBM-P0-1M5"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a1q-Z0-lgr" firstAttribute="leading" secondItem="ROv-md-d9A" secondAttribute="leading" id="9LL-O2-pjo"/>
+                            <constraint firstItem="a1q-Z0-lgr" firstAttribute="bottom" secondItem="4OQ-XK-kgx" secondAttribute="top" id="FbO-Jd-oCa"/>
+                            <constraint firstItem="a1q-Z0-lgr" firstAttribute="top" secondItem="ROv-md-d9A" secondAttribute="top" id="eic-Pk-K3h"/>
+                            <constraint firstAttribute="trailing" secondItem="a1q-Z0-lgr" secondAttribute="trailing" id="kDx-tT-QO2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKf-4L-J35" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="MPB-iv-a3o">
+                    <connections>
+                        <action selector="downSwipe:" destination="XgU-7t-v4y" id="rMW-qe-wfc"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1737" y="359"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Apple" width="302" height="526"/>
+        <image name="SpaceX" width="298" height="524"/>
+        <image name="Tesla" width="302" height="525"/>
+    </resources>
+</document>
